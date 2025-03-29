@@ -8,7 +8,6 @@
 
 
 /*========== Colors ==========*/
-/* Change theme color */
 --hue-color: 285; /* Adjusted hue for purple tones */
 
 /* HSL color mode */
@@ -19,11 +18,11 @@
 --title-color: hsl(285, 8%, 15%);
 --text-color: hsl(285, 8%, 45%);
 --text-color-light: hsl(285, 8%, 65%);
---input-color: hsl(285, 70%, 96%);
---body-color: hsl(285, 60%, 99%);
+--input-color: #EABDE6;
+--body-color: #FFDFEF;
 --container-color: #FFDFEF;
---scroll-bar-color: hsl(285, 12%, 90%);
---scroll-thumb-color: hsl(285, 12%, 80%);
+--scroll-bar-color: #EABDE6;
+--scroll-thumb-color: #D69ADE;
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
