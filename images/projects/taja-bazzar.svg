@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-hidden="true">
+  <rect width="640" height="400" fill="#1F150C"/>
+  <path d="M0 280 Q160 220 320 270 T640 250 L640 400 L0 400 Z" fill="#412D15"/>
+  <circle cx="150" cy="170" r="54" fill="#E1DCC9" opacity="0.9"/>
+  <circle cx="150" cy="170" r="34" fill="#412D15"/>
+  <circle cx="280" cy="150" r="40" fill="#E1DCC9" opacity="0.75"/>
+  <circle cx="280" cy="150" r="22" fill="#1F150C"/>
+  <circle cx="390" cy="180" r="48" fill="#E1DCC9" opacity="0.85"/>
+  <circle cx="390" cy="180" r="28" fill="#412D15"/>
+  <rect x="460" y="120" width="110" height="150" rx="12" fill="#000000" opacity="0.35"/>
+  <rect x="480" y="150" width="70" height="10" fill="#E1DCC9" opacity="0.5"/>
+  <rect x="480" y="176" width="54" height="8" fill="#E1DCC9" opacity="0.35"/>
+  <rect x="100" y="250" width="440" height="18" rx="4" fill="#E1DCC9" opacity="0.2"/>
+  <text x="120" y="80" fill="#E1DCC9" font-family="Georgia, serif" font-size="28" font-weight="700" opacity="0.9">TAJA</text>
+</svg>

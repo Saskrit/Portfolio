@@ -1,675 +1,870 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!--==================== META ====================-->
-        <meta name="description"
-            content="Personal page of Saskrit Bhattarai, Computer Science Student at Ithari Internation College">
-        <meta name="keywords"
-            content="saskrit bhattarai, computer science, data analysis, data science, machine learning, deep learning, natural language processing, large language models, cloud">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Saskrit — Computing graduate. Building apps, web systems, and data-driven solutions.">
+  <meta name="author" content="Saskrit">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1F150C">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Saskrit — Computing Portfolio">
+  <meta property="og:description" content="Apps, web systems, and data solutions built with clarity and craft.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Saskrit — Computing Portfolio">
+  <meta name="twitter:description" content="Apps, web systems, and data solutions built with clarity and craft.">
+  <title>Saskrit — Computing Portfolio</title>
+  <link rel="icon" href="images/favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" sizes="180x180">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Overpass:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Saskrit Bhattarai",
+      "email": "mailto:saskreetking@gmail.com",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Itahari International College"
+      },
+      "knowsAbout": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C#",
+        "React",
+        "Next.js",
+        "Node.js",
+        "MongoDB",
+        "PostgreSQL",
+        "Web Development",
+        "Mobile App Development",
+        "Machine Learning"
+      ]
+    }
+  </script>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+        else document.documentElement.setAttribute("data-theme", "dark");
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+</head>
+<body class="sb-site">
+  <a class="sb-skip-link" href="#main">Skip to content</a>
+  <div class="sb-scroll-frame" aria-hidden="true">
+    <span class="sb-scroll-frame-edge sb-scroll-frame-edge--top" data-scroll-edge="top"></span>
+    <span class="sb-scroll-frame-edge sb-scroll-frame-edge--right" data-scroll-edge="right"></span>
+    <span class="sb-scroll-frame-edge sb-scroll-frame-edge--bottom" data-scroll-edge="bottom"></span>
+    <span class="sb-scroll-frame-edge sb-scroll-frame-edge--left" data-scroll-edge="left"></span>
+  </div>
 
-        <link rel="shortcut icon" sizes="180x180" href="img/apple-touch-icon.png">
-        <link rel="shortcut icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-        <link rel="shortcut icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-        <link rel="shortcut icon" href="img/site.webmanifest">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
+  <header class="sb-site-header" id="top">
+    <div class="sb-header-inner">
+      <a class="sb-logo" href="" aria-label="Saskrit home">Saskrit</a>
+      <div class="sb-header-end">
+        <nav class="sb-site-nav" id="sb-site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#sb-about">About</a></li>
+            <li><a href="#sb-work">Work</a></li>
+            <li><a href="#sb-skills">Skills</a></li>
+            <li><a href="#sb-certificates">Certificates</a></li>
+            <li><a href="#sb-education">Education</a></li>
+            <li><a href="#sb-contact" class="sb-nav-cta">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="sb-theme-toggle" type="button" aria-label="Switch to light theme" data-theme-toggle>
+          <span class="sb-theme-toggle-icon sb-theme-toggle-icon--sun" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+            </svg>
+          </span>
+          <span class="sb-theme-toggle-icon sb-theme-toggle-icon--moon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 7 7 0 1 0 21 14.5z"/>
+            </svg>
+          </span>
+        </button>
+        <button class="sb-nav-toggle" type="button" aria-expanded="false" aria-controls="sb-site-nav" aria-label="Open menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2029850958702097"
-     crossorigin="anonymous"></script>
+  <main id="main">
+    <section class="sb-hero" aria-labelledby="sb-hero-name">
+      <div class="sb-hero-bg" aria-hidden="true"></div>
+      <div class="sb-hero-spot" aria-hidden="true"></div>
+      <div class="sb-hero-content">
+        <div class="sb-hero-photo">
+          <img
+            src="images/profile.png"
+            alt="Portrait of Saskrit Bhattarai"
+            width="160"
+            height="160"
+            decoding="async"
+            onerror="this.onerror=null;this.src='images/profile.png';"
+          >
+        </div>
+        <p class="sb-hero-role">BSc (Hons) Computing · Graduate</p>
+        <h1 id="sb-hero-name" class="sb-hero-name" aria-label="Saskrit Bhattarai">
+          <span class="sb-typewriter" aria-hidden="true">
+            <span class="sb-tw-static" data-tw="s"></span><span class="sb-tw-slot"><span class="sb-tw-ghost">askrit</span><span class="sb-tw-live" data-tw="a"></span></span><span class="sb-tw-static" data-tw="sp"></span><span class="sb-tw-static" data-tw="b"></span><span class="sb-tw-slot"><span class="sb-tw-ghost">hattarai</span><span class="sb-tw-live" data-tw="h"></span></span>
+          </span>
+        </h1>
+        <span class="sb-hero-rule" aria-hidden="true"></span>
+        <div class="sb-hero-actions">
+          <a class="sb-btn sb-btn-primary" href="#sb-work">
+            <i data-lucide="briefcase" aria-hidden="true"></i>
+            View work
+          </a>
+          <a class="sb-btn sb-btn-ghost" href="#sb-contact">
+            <i data-lucide="mail" aria-hidden="true"></i>
+            Get in touch
+          </a>
+        </div>
+        <ul class="sb-hero-links" aria-label="Professional links">
+          <li><a class="sb-link-github" href="https://github.com/Saskrit" target="_blank" rel="noopener noreferrer"><i data-lucide="github" aria-hidden="true"></i>GitHub</a></li>
+          <li><a class="sb-link-linkedin" href="https://www.linkedin.com/in/saskreet/" target="_blank" rel="noopener noreferrer"><i data-lucide="linkedin" aria-hidden="true"></i>LinkedIn</a></li>
+          <li><a class="sb-link-email" href="mailto:saskreetking@gmail.com"><i data-lucide="mail" aria-hidden="true"></i>Email</a></li>
+        </ul>
+      </div>
+    </section>
 
+    <section class="sb-section sb-about" id="sb-about" aria-labelledby="about-heading">
+      <div class="sb-section-inner">
+        <div class="sb-about-layout" data-reveal>
+          <div class="sb-about-intro">
+            <p class="sb-section-label">About</p>
+            <h2 id="about-heading">Built around clarity, craft, and working software.</h2>
+            <p class="sb-about-lead">
+              I’m a BSc (Hons) Computing graduate from Itahari International College with an interest in web development, programming, data, and visual content.
+            </p>
+          </div>
 
-
-        <title>Saskrit's Portfolio</title>
-        <!--==================== UNICONS ====================-->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="css/swiper-bundle.min.css">
-        <!--==================== TYPELIGHTER JS ====================-->
-        <script src ="https://cdn.jsdelivr.net/npm/typelighterjs/typelighter.min.js"></script>
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="css/styles.css">
-        <!--==================== FAVICON ====================-->
-        <link rel="shortcut icon" href="img/general/favicon.png" type="image/png">
-        <!--==================== GOOGLE ANALYTICS ====================-->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1PWGHS8967"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-1PWGHS8967');
-        </script>
-    </head>
-
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Saskrit Portfolio </a>
-              
-        
-        
-
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class="uil uil-estate nav__icon"></i> Home
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i> About
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="uil uil-atom nav__icon"></i> Skills
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#qualification" class="nav__link">
-                                <i class="uil uil-book-alt nav__icon"></i> Qualification
-                            </a>
-                        </li>
-                     
-                       
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> Contact
-                            </a>
-                        </li>
-                    </ul>
-                    <i class="uil uil-times nav__close" id="nav-close"></i>
+          <div class="sb-about-aside">
+            <ul class="sb-about-meta" aria-label="Quick facts">
+              <li>
+                <span class="sb-about-meta-icon" aria-hidden="true"><i data-lucide="graduation-cap"></i></span>
+                <div>
+                  <span class="sb-about-meta-label">Degree</span>
+                  <span class="sb-about-meta-value">BSc (Hons) Computing</span>
                 </div>
-
-                <div class="nav__btns">
-                    <!-- Theme change button -->
-                    <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
-                    </div>
+              </li>
+              <li>
+                <span class="sb-about-meta-icon" aria-hidden="true"><i data-lucide="map-pin"></i></span>
+                <div>
+                  <span class="sb-about-meta-label">Based in</span>
+                  <span class="sb-about-meta-value">Nepal</span>
                 </div>
-            </nav>
-        </header>
-
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/in/saskreet-bhattarai-87059328a/" target="_blank" class="home__social-icon">
-                                <i class="uil uil-linkedin-alt"></i>
-                            </a>
-
-                            <a href="https://github.com/saskreet" target="_blank" class="home__social-icon">
-                                <i class="uil uil-github-alt"></i>
-                            </a>
-
-                            <a href="https://twitter.com/saskreet1" target="_blank" class="home__social-icon">
-                                <i class="uil uil-twitter-alt"></i>
-                            </a>
-
-                            <a href="https://www.facebook.com/saskreetbhattarai62" target="_blank" class="home__social-icon">
-                                <i class="uil uil-facebook-messenger-alt"></i>
-                            </a>
-
-                            <!-- <a href="https:/www.instagram.com/saskreet_bhattarai" target="_blank" class="home__social-icon">
-                                <i class="uil uil-instagram-alt"> </i>
-                            </a> -->
-                        </div>
-
-                        <div class="home__img">
-                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path
-                                        d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                    <image class="home__blob-img" x="-5" y="5" href="img/general/mypic.png" />
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="home__data">
-                            <h1 class="home__title">
-                                hi, <span class="home__colored-text">Saskrit</span> here.<span class="home__colored-text"></span>
-                            </h1>
-                            <h2 class="home__subtitle">
-                                <span class="typeWriter" data-text='["An IT Student", "Deep Learning Enthusiast"]' data-speed=2></span>
-                            </h2> 
-                            <p class="home__description">
-                                I build <span class="home__colored-text">Website</span> and <span class="home__colored-text">Edit Videos </span>sometimes.
-                            </p>
-                            <a href="#contact" class="home__button button button--flex">
-                                Say hi <i class="uil uil-envelope-alt button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button button--flex">
-                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Scroll down</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                        </a>
-                    </div>
+              </li>
+              <li>
+                <span class="sb-about-meta-icon" aria-hidden="true"><i data-lucide="sparkles"></i></span>
+                <div>
+                  <span class="sb-about-meta-label">Focus</span>
+                  <span class="sb-about-meta-value">Web · Code · Creative</span>
                 </div>
-            </section>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <h2 class="section__title">About me</h2>
-                <span class="section__subtitle">Quick introduction</span>
+        <div class="sb-about-body" data-reveal>
+          <div class="sb-about-copy">
+            <p>
+              My technical foundation includes HTML, CSS, Java, Python, and SQL. I enjoy learning how thoughtful code and clear interfaces come together to create useful digital experiences.
+            </p>
+            <p>
+              Beyond development, I work with video and image-editing tools including Filmora, KineMaster, Photoshop, and Lightroom, alongside Microsoft Office for everyday productivity.
+            </p>
+          </div>
+          <a class="sb-about-cta" href="#sb-contact">
+            <span>Open to opportunities</span>
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
 
-                <div class="about__container container grid">
-                    <img src="img/general/hero.png" alt="About section background image" class="about__img">
+    <section class="sb-section sb-work" id="sb-work" aria-labelledby="work-heading">
+      <div class="sb-section-inner">
+        <div class="sb-section-head">
+          <p class="sb-section-label">Selected work</p>
+          <h2 id="work-heading">Projects across apps, web, and data.</h2>
+          <p class="sb-section-desc">Browse side to side through recent work — apps, web systems, and database projects.</p>
+        </div>
 
-                    <div class="about__data">
-                        <p class="about__description">
-                            I'm currently an IT student at
-                            <a href="https://iic.edu.np/" class="home__colored-text">Itahari International College</a>,
-                            studying Bachelor First year.<br><br>
-                            I have a keen interest in html,css,c+,java and everything in between.. <br><br>
-                            ***<br>
-                            "Coding the Future, One Line at a Time."✍
-                        </p>
-                        <div class="about__info">
-                            <div>
-                                <span class="about__info-title">A+</span>
-                                <span class="about__info-name">In Grade<br> 10 </span>
-                            </div>
-                            <div>
-                                <span class="about__info-title">B+</span>
-                                <span class="about__info-name">In Grade<br>12 (Science)</span>
-                            </div>
-                            <div>
-                                <span class="about__info-title">1</span>
-                                <span class="about__info-name">Projects <br> Completed</span>
-                            </div>
-                        </div>
+        <div class="sb-project-filter-bar" data-reveal>
+          <div class="sb-project-filters" role="group" aria-label="Filter projects">
+            <button class="sb-project-filter sb-is-active" type="button" data-project-filter="all" aria-pressed="true">All</button>
+            <button class="sb-project-filter" type="button" data-project-filter="app" aria-pressed="false">Apps</button>
+            <button class="sb-project-filter" type="button" data-project-filter="web" aria-pressed="false">Web</button>
+            <button class="sb-project-filter" type="button" data-project-filter="database" aria-pressed="false">Database</button>
+          </div>
+          <div class="sb-swiper-toolbar">
+            <button type="button" class="sb-swiper-nav-btn sb-projects-prev" aria-label="Previous project">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button type="button" class="sb-swiper-nav-btn sb-projects-next" aria-label="Next project">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
 
-                        <div class="cv-links">
-
-                            <a href="pdf/Saskrit.pdf"  id="resume-link" target="_blank">My Resume</a>
-                    <a href="pdf/Saskrit.pdf"  download="Saskrit Bhattarai.pdf" target="_blank">Download CV</a>
-                  
-                            <!-- <a download="" class="button button--flex" style="margin-left: 15px;">
-                                Resume EN<i class="uil uil-download-alt button__icon"></i>
-                            </a> -->
-                        </div>
-                    </div>
+        <div class="swiper sb-projects-swiper" data-reveal>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-project-category="web">
+              <a class="sb-project-slide" href="https://github.com/Saskrit/BakiBookApp" target="_blank" rel="noopener noreferrer">
+                <div class="sb-project-cover" aria-hidden="true">
+                  <img src="images/projects/bakibook.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
                 </div>
-            </section>
-
-           <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">Skills</h2>
-                <span class="section__subtitle">My technical level</span>
-
-                <div class="skills__container container grid">
-                    <div>
-                        <!--==================== SKILL 1 ====================-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-brackets-curly skills__icon"></i>
-                                <div>
-                                    <h1 class="skills__title">Development</h1>
-                                    <span class="skills__subtitle">All about the core..</span>
-                                </div>
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">HTML</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__html"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Java</h3>
-                                        <span class="skills__number">30%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__java"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">SQL</h3>
-                                        <span class="skills__number">20%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__sql"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">CSS</h3>
-                                        <span class="skills__number">50%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__css"></span>
-                                    </div>
-                                </div>
-
-                               
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Python</h3>
-                                        <span class="skills__number">10%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__python"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--==================== SKILL 2 ====================-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-server-network skills__icon"></i>
-
-                                <div>
-                                    <h1 class="skills__title">Video Editing</h1>
-                                    <span class="skills__subtitle">Edit Edit Edit</span>
-                                </div>
-
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Filmora</h3>
-                                        <span class="skills__number">85%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__filmora"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Kinemaster</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__km"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Adobe Photoshop</h3>
-                                        <span class="skills__number">70%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__ap"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">lightroom</h3>
-                                        <span class="skills__number">70%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__lr"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <!--==================== SKILL 3 ====================-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-atom skills__icon"></i>
-
-                                <div>
-                                    <h1 class="skills__title">Microsoft Office</h1>
-                                    <span class="skills__subtitle">Micro is Soft!</span>
-                                </div>
-
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">MS WORD</h3>
-                                        <span class="skills__number">85%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__word"></span>
-                                    </div>
-                                </div>
-
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">MS EXCEL</h3>
-                                        <span class="skills__number">70%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__ex"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">MS PowerPoint</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__pp"></span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--==================== SKILL 4 ====================-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-cloud-lock skills__icon"></i>
-
-                                <div>
-                                    <h1 class="skills__title">Language</h1>
-                                    <span class="skills__subtitle">-</span>
-                                </div>
-
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">English</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__eng"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Nepali</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__nep"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                      
-                         
-                                
-
-                            </div>
-                        </div>
-
-                    </div>
+                <div class="sb-project-slide-body">
+                  <div class="sb-project-slide-top">
+                    <span class="sb-project-icon" aria-hidden="true"><i data-lucide="book-open"></i></span>
+                    <span class="sb-project-index">01</span>
+                  </div>
+                  <div class="sb-project-meta-row">
+                    <span class="sb-project-type">Web</span>
+                    <span class="sb-project-year">2026</span>
+                  </div>
+                  <h3 class="sb-project-title">BakiBook</h3>
+                  <p class="sb-project-summary">Digital credit (baki) management for local shops — ledgers, payments, and shopkeeper portals.</p>
+                  <ul class="sb-project-tags" aria-label="Technologies">
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>MongoDB</li>
+                  </ul>
+                  <span class="sb-project-cta">View <i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
                 </div>
-            </section>
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section" id="qualification">
-                <h2 class="section__title">Qualification</h2>
-                <span class="section__subtitle">My personal journey</span>
-
-                <div class="qualification__container container">
-                    <div class="qualification__tabs">
-                        <div class="qualification__button button--flex qualification__active" data-target='#education'>
-                            <i class="uil uil-graduation-cap qualification__icon"></i>
-                            Education
-                        </div>
-
-                        <div class="qualification__button button--flex" data-target="#work">
-                            <i class="uil uil-briefcase-alt qualification__icon"></i>
-                            Work
-                        </div>
-                    </div>
-
-                    <div class="qualification__sections">
-                        <!--==================== QUALIFICATION CONTENT 1 ====================-->
-                        <div class="qualification__content qualification__active" data-content id="education">
-                            <!--==================== QUALIFICATION 1 ====================-->
-                            <div class="qualification__data">
-
-                                <div>
-                                    <h3 class="qualification__title">
-                                        <a>Nursery - 10th Grade</a>
-                                    </h3>
-                                    <span class="qualification__subtitle">Bright Future School,Salakpur</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2007 - 2021
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <div class="qualification__line"></div>
-                                </div>
-                            </div>
-
-                            <!--==================== QUALIFICATION 2 ====================-->
-                            <div class="qualification__data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <div class="qualification__line"></div>
-                                </div>
-
-                                <div>
-                                    <h3 class="qualification__title">
-                                        <a>+2 (11 and 12)</a>
-                                    </h3>
-                                    <span class="qualification__subtitle">Sushma Godawari College,Ithari</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2021 - 2023
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--==================== QUALIFICATION 3 ====================-->
-                            <div class="qualification__data">
-
-                                <div>
-                                    <h3 class="qualification__title">
-                                        <a>
-                                            BSc (Hons) Computing
-                                        </a>
-                                    </h3>
-                                    <span class="qualification__subtitle">Itahari Intenational College, Dulari</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2023 - Current
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <div class="qualification__line"></div>
-                                </div>
-                            </div>
-
-                            
-                            <!--==================== QUALIFICATION 5 ====================-->
-
-                        </div>
-                        <!--==================== QUALIFICATION CONTENT 2 ====================-->
-                        <div class="qualification__content" data-content id="work">
-
-                            <!--==================== QUALIFICATION 1 ====================-->
-                            <div class="qualification__data">
-
-                                <div>
-                                    <h3 class="qualification__title">
-                                        <a>Currently An Student</a>
-                                    </h3>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </section>
-
-    
-
-
-            
-
-           
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-                <h2 class="section__title">Contact me</h2>
-                <span class="section__subtitle">Get in touch</span>
-
-                <div class="contact__container container grid">
-                    <div>
-                        <div class="contact__information">
-                            <i class="uil uil-phone-alt contact__icon"></i>
-                            <div>
-                                <h3 class="contact__title">Phone</h3>
-                                <span class="contact__subtitle"> <a href="tel://9703649841">9703649841 </a></span>
-                            </div>
-                        </div>
-                        <div class="contact__information">
-                            <i class="uil uil-envelope contact__icon"></i>
-                            <div>
-                                <h3 class="contact__title">E-mail</h3>
-                                <span class="contact__subtitle"><a href="mailto:saskreetking@gmail.com"> saskreetking@gmail.com </a></span>
-                            </div>
-                        </div>
-                        <div class="contact__information">
-                            <i class="uil uil-map-marker contact__icon"></i>
-                            <div>
-                                <h3 class="contact__title">Location</h3>
-                                <span class="contact__subtitle"> <a href="https://maps.app.goo.gl/B4FY1esew2pyMcHM7" target="_blank" >Biratchowk,Morang </a></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <form action="https://formspree.io/f/xeqbwvav" method="POST" class="contact__form grid" id="my-form">
-                        <div class="contact__inputs grid">
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Name</label>
-                                <input type="text" id="name" name="name" class="contact__input" required>
-                            </div>
-                            <div class="contact__content">
-                                <label for="" class="contact__label">E-mail</label>
-                                <input type="email" id="email" name="email" class="contact__input" required>
-                            </div>
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Message</label>
-                                <textarea id="message" name="message" cols="0" rows="6" class="contact__input"
-                                    required></textarea>
-                            </div>
-                            <div class="contact__submit">
-                                <div>
-                                    <input type="submit" value="Send message" class="button button--flex"
-                                        id="contact__button">
-                                </div>
-                                <div id="contact__status"></div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </section>
-        </main>
-
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer__bg">
-                <div class="footer__container container grid">
-                    <div>
-                        <h1 class="footer__title">Saskrit</h1>
-                        <span class="typeWriter footer__subtitle" data-text='["An IT Student", "Deep Learning Enthusiast"]' data-speed=2></span>
-                    </div>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#about" class="footer__link">About</a>
-                        </li>
-                        <li>
-                            <a href="#skills" class="footer__link">Skills</a>
-                        </li>
-                         <li>
-                            <a href="#qualification" class="footer__link">Qualification</a>
-                        </li>
-                         <li>
-                            <a href="#contact" class="footer__link">Contact</a>
-                        </li>
-
-                    </ul>
-
-                    <div class="footer__socials">
-                        <a href="https://www.linkedin.com/in/saskreet-bhattarai-87059328a/" target="_blank" class="footer__social">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
-                        <a href="https://github.com/saskreet" target="_blank" class="footer__social">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                        <a href="https://twitter.com/saskreet1" target="_blank" class="footer__social">
-                            <i class="uil uil-twitter-alt"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@saskreet0819" target="_blank"
-                            class="footer__social">
-                            <i class="uil uil-youtube"></i>
-                        </a>
-                        <!-- <a href="https:/www.instagram.com/saskreet_bhattarai" target="_blank" class="footer__social">
-                            <i class="uil uil-instagram-alt"></i>
-                        </a> -->
-                      
-                    </div>
-                </div>
-
-                <p class="footer__copy">&copy; Copyright 2023. Saskrit Bhattarai</p>
+              </a>
             </div>
-        </footer>
 
-        <!--==================== SCROLL TOP ====================-->
-        <a href="#home" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup__icon"></i>
-        </a>
+            <div class="swiper-slide" data-project-category="web">
+              <a class="sb-project-slide" href="https://tajabazzar.me/" target="_blank" rel="noopener noreferrer">
+                <div class="sb-project-cover" aria-hidden="true">
+                  <img src="images/projects/taja-bazzar.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <div class="sb-project-slide-body">
+                  <div class="sb-project-slide-top">
+                    <span class="sb-project-icon" aria-hidden="true"><i data-lucide="store"></i></span>
+                    <span class="sb-project-index">02</span>
+                  </div>
+                  <div class="sb-project-meta-row">
+                    <span class="sb-project-type">Web</span>
+                    <span class="sb-project-year">2025</span>
+                  </div>
+                  <h3 class="sb-project-title">Taja Bazzar</h3>
+                  <p class="sb-project-summary">Online marketplace for fresh local goods — browse, discover, and shop from the web.</p>
+                  <ul class="sb-project-tags" aria-label="Technologies">
+                    <li>Web</li>
+                    <li>Marketplace</li>
+                  </ul>
+                  <span class="sb-project-cta">Live site <i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+                </div>
+              </a>
+            </div>
 
-        <!--==================== SWIPER JS ====================-->
-        <script src="js/swiper-bundle.min.js"></script>
-        <!--==================== SCROLL REVEAL JS ====================-->
-        <script src="js/scrollreveal.min.js"></script>
-        <!--==================== MAIN JS ====================-->
-        <script src="js/main.js"></script>
-        <!--==================== FONTAWESOME ====================-->
-        <script src="https://kit.fontawesome.com/b58a420f20.js" crossorigin="anonymous"></script>
-    </body>
+            <div class="swiper-slide" data-project-category="app">
+              <a class="sb-project-slide" href="https://gitlab.com/sneakify1/Sneakify" target="_blank" rel="noopener noreferrer">
+                <div class="sb-project-cover" aria-hidden="true">
+                  <img src="images/projects/sneakify.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <div class="sb-project-slide-body">
+                  <div class="sb-project-slide-top">
+                    <span class="sb-project-icon" aria-hidden="true"><i data-lucide="shopping-bag"></i></span>
+                    <span class="sb-project-index">03</span>
+                  </div>
+                  <div class="sb-project-meta-row">
+                    <span class="sb-project-type">App</span>
+                    <span class="sb-project-year">2025</span>
+                  </div>
+                  <h3 class="sb-project-title">Sneakify</h3>
+                  <p class="sb-project-summary">Sneaker-focused shopping experience built as a full product codebase on GitLab.</p>
+                  <ul class="sb-project-tags" aria-label="Technologies">
+                    <li>Mobile</li>
+                    <li>E-commerce</li>
+                  </ul>
+                  <span class="sb-project-cta">View <i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+                </div>
+              </a>
+            </div>
 
+            <div class="swiper-slide" data-project-category="app">
+              <a class="sb-project-slide" href="https://github.com/Saskrit/SerialBot" target="_blank" rel="noopener noreferrer">
+                <div class="sb-project-cover" aria-hidden="true">
+                  <img src="images/projects/serialbot.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <div class="sb-project-slide-body">
+                  <div class="sb-project-slide-top">
+                    <span class="sb-project-icon" aria-hidden="true"><i data-lucide="bot"></i></span>
+                    <span class="sb-project-index">04</span>
+                  </div>
+                  <div class="sb-project-meta-row">
+                    <span class="sb-project-type">App</span>
+                    <span class="sb-project-year">2025</span>
+                  </div>
+                  <h3 class="sb-project-title">SerialBot</h3>
+                  <p class="sb-project-summary">Telegram bot and web panel for browsing, delivering, and managing TV serial episodes.</p>
+                  <ul class="sb-project-tags" aria-label="Technologies">
+                    <li>Python</li>
+                    <li>MongoDB</li>
+                    <li>aiogram</li>
+                  </ul>
+                  <span class="sb-project-cta">View <i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide" data-project-category="web">
+              <a class="sb-project-slide" href="https://github.com/Saskrit/RapVault" target="_blank" rel="noopener noreferrer">
+                <div class="sb-project-cover" aria-hidden="true">
+                  <img src="images/projects/rapvault.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <div class="sb-project-slide-body">
+                  <div class="sb-project-slide-top">
+                    <span class="sb-project-icon" aria-hidden="true"><i data-lucide="mic-2"></i></span>
+                    <span class="sb-project-index">05</span>
+                  </div>
+                  <div class="sb-project-meta-row">
+                    <span class="sb-project-type">Web</span>
+                    <span class="sb-project-year">2025</span>
+                  </div>
+                  <h3 class="sb-project-title">RapVault</h3>
+                  <p class="sb-project-summary">Private cloud notebook for rap lyrics with folders, auto-save, search, and export.</p>
+                  <ul class="sb-project-tags" aria-label="Technologies">
+                    <li>Next.js</li>
+                    <li>PostgreSQL</li>
+                    <li>Prisma</li>
+                  </ul>
+                  <span class="sb-project-cta">View <i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide" data-project-category="web">
+              <a class="sb-project-slide" href="https://github.com/Saskrit/SarcasmDetector" target="_blank" rel="noopener noreferrer">
+                <div class="sb-project-cover" aria-hidden="true">
+                  <img src="images/projects/sarcasm.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <div class="sb-project-slide-body">
+                  <div class="sb-project-slide-top">
+                    <span class="sb-project-icon" aria-hidden="true"><i data-lucide="brain-circuit"></i></span>
+                    <span class="sb-project-index">06</span>
+                  </div>
+                  <div class="sb-project-meta-row">
+                    <span class="sb-project-type">Web</span>
+                    <span class="sb-project-year">2025</span>
+                  </div>
+                  <h3 class="sb-project-title">Sarcasm Detector</h3>
+                  <p class="sb-project-summary">Flask web app that classifies sarcastic text with SVM, logistic regression, and Naive Bayes.</p>
+                  <ul class="sb-project-tags" aria-label="Technologies">
+                    <li>Python</li>
+                    <li>Flask</li>
+                    <li>ML</li>
+                  </ul>
+                  <span class="sb-project-cta">View <i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide" data-project-category="app">
+              <a class="sb-project-slide" href="https://github.com/Saskrit/DayMark_SaskritBhattarai" target="_blank" rel="noopener noreferrer">
+                <div class="sb-project-cover" aria-hidden="true">
+                  <img src="images/projects/daymark.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <div class="sb-project-slide-body">
+                  <div class="sb-project-slide-top">
+                    <span class="sb-project-icon" aria-hidden="true"><i data-lucide="calendar-check"></i></span>
+                    <span class="sb-project-index">07</span>
+                  </div>
+                  <div class="sb-project-meta-row">
+                    <span class="sb-project-type">App</span>
+                    <span class="sb-project-year">2026</span>
+                  </div>
+                  <h3 class="sb-project-title">DayMark</h3>
+                  <p class="sb-project-summary">Desktop day-tracking application for marking and organizing daily activities.</p>
+                  <ul class="sb-project-tags" aria-label="Technologies">
+                    <li>C#</li>
+                    <li>Desktop</li>
+                  </ul>
+                  <span class="sb-project-cta">View <i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide" data-project-category="database">
+              <a class="sb-project-slide" href="https://github.com/Saskrit/ShowroomManagementSystem" target="_blank" rel="noopener noreferrer">
+                <div class="sb-project-cover" aria-hidden="true">
+                  <img src="images/projects/showroom.svg" alt="" width="640" height="400" loading="lazy" decoding="async">
+                </div>
+                <div class="sb-project-slide-body">
+                  <div class="sb-project-slide-top">
+                    <span class="sb-project-icon" aria-hidden="true"><i data-lucide="warehouse"></i></span>
+                    <span class="sb-project-index">08</span>
+                  </div>
+                  <div class="sb-project-meta-row">
+                    <span class="sb-project-type">Database</span>
+                    <span class="sb-project-year">2024</span>
+                  </div>
+                  <h3 class="sb-project-title">Showroom Management</h3>
+                  <p class="sb-project-summary">Showroom operations system for inventory, customers, sales, and reporting.</p>
+                  <ul class="sb-project-tags" aria-label="Technologies">
+                    <li>Java</li>
+                    <li>SQL</li>
+                  </ul>
+                  <span class="sb-project-cta">View <i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination sb-projects-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sb-section sb-skills" id="sb-skills" aria-labelledby="skills-heading">
+      <div class="sb-section-inner">
+        <div class="sb-section-head">
+          <p class="sb-section-label">Capabilities</p>
+          <h2 id="skills-heading">What I work with.</h2>
+          <p class="sb-section-desc">A focused stack across languages, product surfaces, and the tools that keep delivery steady.</p>
+        </div>
+
+        <div class="sb-skills-grid" data-reveal>
+          <article class="sb-skill-block">
+            <div class="sb-skill-block-head">
+              <span class="sb-skill-icon" aria-hidden="true"><i data-lucide="braces"></i></span>
+              <div>
+                <span class="sb-skill-index">01</span>
+                <h3>Languages</h3>
+              </div>
+            </div>
+            <ul class="sb-skill-list">
+              <li><i data-lucide="file-code-2" aria-hidden="true"></i>JavaScript / TypeScript</li>
+              <li><i data-lucide="file-code-2" aria-hidden="true"></i>Python</li>
+              <li><i data-lucide="file-code-2" aria-hidden="true"></i>Java</li>
+              <li><i data-lucide="file-code-2" aria-hidden="true"></i>C#</li>
+              <li><i data-lucide="database" aria-hidden="true"></i>SQL</li>
+            </ul>
+          </article>
+
+          <article class="sb-skill-block">
+            <div class="sb-skill-block-head">
+              <span class="sb-skill-icon" aria-hidden="true"><i data-lucide="app-window"></i></span>
+              <div>
+                <span class="sb-skill-index">02</span>
+                <h3>Web &amp; Apps</h3>
+              </div>
+            </div>
+            <ul class="sb-skill-list">
+              <li><i data-lucide="layout" aria-hidden="true"></i>HTML, CSS, React</li>
+              <li><i data-lucide="layers" aria-hidden="true"></i>Next.js</li>
+              <li><i data-lucide="server" aria-hidden="true"></i>Node.js / Express</li>
+              <li><i data-lucide="smartphone" aria-hidden="true"></i>React Native / Expo</li>
+              <li><i data-lucide="bot" aria-hidden="true"></i>Flask · Telegram bots</li>
+            </ul>
+          </article>
+
+          <article class="sb-skill-block">
+            <div class="sb-skill-block-head">
+              <span class="sb-skill-icon" aria-hidden="true"><i data-lucide="hard-drive"></i></span>
+              <div>
+                <span class="sb-skill-index">03</span>
+                <h3>Data &amp; Tools</h3>
+              </div>
+            </div>
+            <ul class="sb-skill-list">
+              <li><i data-lucide="leaf" aria-hidden="true"></i>MongoDB</li>
+              <li><i data-lucide="database" aria-hidden="true"></i>PostgreSQL / Prisma</li>
+              <li><i data-lucide="brain-circuit" aria-hidden="true"></i>Machine Learning</li>
+              <li><i data-lucide="git-branch" aria-hidden="true"></i>Git &amp; GitHub</li>
+              <li><i data-lucide="network" aria-hidden="true"></i>REST APIs · Socket.IO</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sb-section sb-certificates" id="sb-certificates" aria-labelledby="certificates-heading">
+      <div class="sb-section-inner">
+        <div class="sb-section-head">
+          <p class="sb-section-label">Credentials</p>
+          <h2 id="certificates-heading">Learning beyond the classroom.</h2>
+          <p class="sb-section-desc">Verified coursework across cloud computing, machine learning, data engineering, and modern web development.</p>
+        </div>
+
+        <div class="sb-certificate-grid" data-reveal>
+          <article class="sb-certificate-card">
+            <div class="sb-certificate-card-top">
+              <span class="sb-certificate-icon" aria-hidden="true"><i data-lucide="cloud"></i></span>
+              <span class="sb-certificate-index">01</span>
+            </div>
+            <p class="sb-certificate-issuer">AWS Academy</p>
+            <h3>Cloud Foundations</h3>
+            <p class="sb-certificate-type">Graduate training badge</p>
+            <a class="sb-certificate-link" href="https://www.credly.com/badges/045a2bfa-2a17-4adb-a538-72c64e24c41f/linked_in_profile" target="_blank" rel="noopener noreferrer">
+              Verify credential <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="sb-certificate-card">
+            <div class="sb-certificate-card-top">
+              <span class="sb-certificate-icon" aria-hidden="true"><i data-lucide="brain-circuit"></i></span>
+              <span class="sb-certificate-index">02</span>
+            </div>
+            <p class="sb-certificate-issuer">AWS Academy</p>
+            <h3>Machine Learning Foundations</h3>
+            <p class="sb-certificate-type">Graduate training badge</p>
+            <a class="sb-certificate-link" href="https://www.credly.com/badges/650eb190-6e04-4776-b058-3353f7d3ea08/linked_in_profile" target="_blank" rel="noopener noreferrer">
+              Verify credential <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="sb-certificate-card">
+            <div class="sb-certificate-card-top">
+              <span class="sb-certificate-icon" aria-hidden="true"><i data-lucide="message-square-text"></i></span>
+              <span class="sb-certificate-index">03</span>
+            </div>
+            <p class="sb-certificate-issuer">AWS Academy</p>
+            <h3>Machine Learning for Natural Language Processing</h3>
+            <p class="sb-certificate-type">Graduate training badge</p>
+            <a class="sb-certificate-link" href="https://www.credly.com/badges/1ea327a9-851f-41a4-9b11-0a1493ffe52c/linked_in_profile" target="_blank" rel="noopener noreferrer">
+              Verify credential <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="sb-certificate-card">
+            <div class="sb-certificate-card-top">
+              <span class="sb-certificate-icon" aria-hidden="true"><i data-lucide="database-zap"></i></span>
+              <span class="sb-certificate-index">04</span>
+            </div>
+            <p class="sb-certificate-issuer">AWS Academy</p>
+            <h3>Data Engineering</h3>
+            <p class="sb-certificate-type">Graduate training badge</p>
+            <a class="sb-certificate-link" href="https://www.credly.com/badges/8a273580-9f83-4649-ad62-f11ccfb83ffa/linked_in_profile" target="_blank" rel="noopener noreferrer">
+              Verify credential <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="sb-certificate-card">
+            <div class="sb-certificate-card-top">
+              <span class="sb-certificate-icon" aria-hidden="true"><i data-lucide="server-cog"></i></span>
+              <span class="sb-certificate-index">05</span>
+            </div>
+            <p class="sb-certificate-issuer">Codecademy</p>
+            <h3>Learn Node.js</h3>
+            <p class="sb-certificate-type">Course certificate · 2025</p>
+            <a class="sb-certificate-link" href="https://www.codecademy.com/profiles/Saskreet/sb-certificates/240305d50b925c17868f1ac7a21a3261" target="_blank" rel="noopener noreferrer">
+              View certificate <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="sb-certificate-card">
+            <div class="sb-certificate-card-top">
+              <span class="sb-certificate-icon" aria-hidden="true"><i data-lucide="component"></i></span>
+              <span class="sb-certificate-index">06</span>
+            </div>
+            <p class="sb-certificate-issuer">Scaler Topics</p>
+            <h3>React JS Foundations</h3>
+            <p class="sb-certificate-type">Course certificate</p>
+            <div class="sb-certificate-links">
+              <a class="sb-certificate-link" href="https://moonshot.scaler.com/s/li/4ComB21RkP" target="_blank" rel="noopener noreferrer">
+                Verify <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+              <a class="sb-certificate-link sb-certificate-link--secondary" href="https://drive.google.com/file/d/1H7YAbTtO-iwmSsC8i9EMggOOnPtd2n6v/view" target="_blank" rel="noopener noreferrer">
+                PDF <i data-lucide="file-text" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sb-section sb-education" id="sb-education" aria-labelledby="education-heading">
+      <div class="sb-section-inner">
+        <div class="sb-section-head">
+          <p class="sb-section-label">Education</p>
+          <h2 id="education-heading">Academic foundation.</h2>
+          <p class="sb-section-desc">Formal study that shaped how I design systems, ship software, and think in data.</p>
+        </div>
+
+        <div class="sb-edu-tabs" role="tablist" aria-label="Education levels" data-reveal>
+          <button class="sb-edu-tab sb-is-active" type="button" role="tab" aria-selected="true" aria-controls="edu-panel-see" id="edu-tab-see" data-edu-tab="see">
+            <span class="sb-edu-tab-index">01</span>
+            <span class="sb-edu-tab-label">SEE</span>
+          </button>
+          <button class="sb-edu-tab" type="button" role="tab" aria-selected="false" aria-controls="edu-panel-plus2" id="edu-tab-plus2" data-edu-tab="plus2">
+            <span class="sb-edu-tab-index">02</span>
+            <span class="sb-edu-tab-label">+2</span>
+          </button>
+          <button class="sb-edu-tab" type="button" role="tab" aria-selected="false" aria-controls="edu-panel-bachelor" id="edu-tab-bachelor" data-edu-tab="bachelor">
+            <span class="sb-edu-tab-index">03</span>
+            <span class="sb-edu-tab-label">Bachelor</span>
+          </button>
+        </div>
+
+        <div class="sb-edu-panels" data-reveal>
+          <article class="sb-edu-card sb-is-active" id="edu-panel-see" role="tabpanel" aria-labelledby="edu-tab-see" data-edu-panel="see">
+            <div class="sb-edu-card-aside">
+              <span class="sb-edu-badge" aria-hidden="true">
+                <i data-lucide="book-open"></i>
+              </span>
+              <div class="sb-edu-aside-meta">
+                <span class="sb-edu-aside-label">Duration</span>
+                <span class="sb-edu-aside-value">2007 — 2021</span>
+              </div>
+              <div class="sb-edu-aside-meta">
+                <span class="sb-edu-aside-label">Level</span>
+                <span class="sb-edu-aside-value">Secondary</span>
+              </div>
+              <div class="sb-edu-aside-meta">
+                <span class="sb-edu-aside-label">Status</span>
+                <span class="sb-edu-aside-value sb-edu-aside-value--accent">Completed</span>
+              </div>
+            </div>
+            <div class="sb-edu-card-main">
+              <p class="sb-edu-kicker">Secondary Education Examination</p>
+              <h3>SEE — Grade 10</h3>
+              <p class="sb-edu-place">
+                <i data-lucide="building-2" aria-hidden="true"></i>
+                Bright Future School, Salakpur
+              </p>
+              <p class="sb-edu-note">
+                Completed Grade 10 with an A+ result, building a strong academic foundation for higher secondary study.
+              </p>
+              <div class="sb-edu-coursework">
+                <p class="sb-edu-coursework-label">Key subjects</p>
+                <ul>
+                  <li><i data-lucide="calculator" aria-hidden="true"></i>Mathematics</li>
+                  <li><i data-lucide="flask-conical" aria-hidden="true"></i>Science</li>
+                  <li><i data-lucide="book-marked" aria-hidden="true"></i>English</li>
+                  <li><i data-lucide="globe" aria-hidden="true"></i>Social Studies</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="sb-edu-card" id="edu-panel-plus2" role="tabpanel" aria-labelledby="edu-tab-plus2" data-edu-panel="plus2" hidden>
+            <div class="sb-edu-card-aside">
+              <span class="sb-edu-badge" aria-hidden="true">
+                <i data-lucide="layers"></i>
+              </span>
+              <div class="sb-edu-aside-meta">
+                <span class="sb-edu-aside-label">Duration</span>
+                <span class="sb-edu-aside-value">2021 — 2023</span>
+              </div>
+              <div class="sb-edu-aside-meta">
+                <span class="sb-edu-aside-label">Level</span>
+                <span class="sb-edu-aside-value">Higher Secondary</span>
+              </div>
+              <div class="sb-edu-aside-meta">
+                <span class="sb-edu-aside-label">Status</span>
+                <span class="sb-edu-aside-value sb-edu-aside-value--accent">Completed</span>
+              </div>
+            </div>
+            <div class="sb-edu-card-main">
+              <p class="sb-edu-kicker">Higher Secondary (+2)</p>
+              <h3>+2 — Science</h3>
+              <p class="sb-edu-place">
+                <i data-lucide="building-2" aria-hidden="true"></i>
+                Sushma Godawari College, Itahari
+              </p>
+              <p class="sb-edu-note">
+                Completed the +2 Science programme with a B+ result, strengthening analytical thinking and preparing for further study in computing.
+              </p>
+              <div class="sb-edu-coursework">
+                <p class="sb-edu-coursework-label">Key subjects</p>
+                <ul>
+                  <li><i data-lucide="calculator" aria-hidden="true"></i>Mathematics</li>
+                  <li><i data-lucide="flask-conical" aria-hidden="true"></i>Chemistry</li>
+                  <li><i data-lucide="book-marked" aria-hidden="true"></i>English</li>
+                  <li><i data-lucide="atom" aria-hidden="true"></i>Physics</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="sb-edu-card" id="edu-panel-bachelor" role="tabpanel" aria-labelledby="edu-tab-bachelor" data-edu-panel="bachelor" hidden>
+            <div class="sb-edu-card-aside">
+              <span class="sb-edu-badge" aria-hidden="true">
+                <i data-lucide="graduation-cap"></i>
+              </span>
+              <div class="sb-edu-aside-meta">
+                <span class="sb-edu-aside-label">Duration</span>
+                <span class="sb-edu-aside-value">2023 — 2026</span>
+              </div>
+              <div class="sb-edu-aside-meta">
+                <span class="sb-edu-aside-label">Level</span>
+                <span class="sb-edu-aside-value">Undergraduate</span>
+              </div>
+              <div class="sb-edu-aside-meta">
+                <span class="sb-edu-aside-label">Status</span>
+                <span class="sb-edu-aside-value sb-edu-aside-value--accent">Completed</span>
+              </div>
+            </div>
+            <div class="sb-edu-card-main">
+              <p class="sb-edu-kicker">Degree programme</p>
+              <h3>BSc (Hons) Computing</h3>
+              <p class="sb-edu-place">
+                <i data-lucide="building-2" aria-hidden="true"></i>
+                Itahari International College, Dulari
+              </p>
+              <p class="sb-edu-note">
+                Core focus across software engineering, web technologies, mobile development, and database systems — with applied project work throughout the degree.
+              </p>
+              <div class="sb-edu-coursework">
+                <p class="sb-edu-coursework-label">Key areas</p>
+                <ul>
+                  <li><i data-lucide="code-2" aria-hidden="true"></i>Software Engineering</li>
+                  <li><i data-lucide="globe" aria-hidden="true"></i>Web Technologies</li>
+                  <li><i data-lucide="smartphone" aria-hidden="true"></i>Mobile Development</li>
+                  <li><i data-lucide="database" aria-hidden="true"></i>Database Systems</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sb-section sb-contact" id="sb-contact" aria-labelledby="contact-heading">
+      <div class="sb-section-inner">
+        <div class="sb-section-head">
+          <p class="sb-section-label">Contact</p>
+          <h2 id="contact-heading">Let’s build something useful.</h2>
+          <p class="sb-section-desc">Open to roles, freelance, and collaboration. Say hello — I’ll get back to you.</p>
+        </div>
+        <div class="sb-contact-layout" data-reveal>
+          <aside class="sb-contact-info">
+            <div class="sb-contact-info-icon" aria-hidden="true">
+              <i data-lucide="send"></i>
+            </div>
+            <p class="sb-contact-info-label">Prefer email?</p>
+            <div class="sb-contact-email-row">
+              <a class="sb-contact-email" href="mailto:saskreetking@gmail.com">saskreetking@gmail.com</a>
+              <button class="sb-copy-email" type="button" data-copy-email="saskreetking@gmail.com" aria-label="Copy email address">
+                <i data-lucide="copy" aria-hidden="true"></i>
+                <span data-copy-label>Copy</span>
+              </button>
+            </div>
+            <p class="sb-contact-response">
+              I usually respond within 1–2 working days.
+            </p>
+            <ul class="sb-contact-links">
+              <li>
+                <a class="sb-link-github" href="https://github.com/Saskrit" target="_blank" rel="noopener noreferrer">
+                  <i data-lucide="github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a class="sb-link-linkedin" href="https://www.linkedin.com/in/saskreet/" target="_blank" rel="noopener noreferrer">
+                  <i data-lucide="linkedin" aria-hidden="true"></i>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="pdf/Saskrit.pdf" target="_blank" rel="noopener noreferrer">
+                  <i data-lucide="file-text" aria-hidden="true"></i>
+                  Resume
+                </a>
+              </li>
+            </ul>
+          </aside>
+
+          <form
+            class="sb-contact-form"
+            action="https://formspree.io/f/xeqbwvav"
+            method="POST"
+            data-contact-form
+          >
+            <input class="sb-form-honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+
+            <div class="sb-form-row">
+              <div class="sb-form-field">
+                <label for="contact-name">Name</label>
+                <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+              </div>
+              <div class="sb-form-field">
+                <label for="sb-contact-email">Email</label>
+                <input id="sb-contact-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+
+            <div class="sb-form-field">
+              <label for="contact-subject">Subject</label>
+              <input id="contact-subject" name="_subject" type="text" placeholder="Project, role, or collaboration" required>
+            </div>
+
+            <div class="sb-form-field">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="6" placeholder="Tell me a little about what you have in mind…" required></textarea>
+            </div>
+
+            <div class="sb-form-footer">
+              <p class="sb-form-status" data-form-status role="status" aria-live="polite"></p>
+              <button class="sb-form-submit" type="submit">
+                <span>Send message</span>
+                <i data-lucide="send" aria-hidden="true"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sb-site-footer">
+    <div class="sb-footer-inner">
+      <div class="sb-footer-identity">
+        <p class="sb-footer-brand">Saskrit</p>
+        <p class="sb-footer-tagline">Computing graduate · Apps, web, and data</p>
+      </div>
+      <nav class="sb-footer-nav" aria-label="Footer">
+        <a href="#sb-about">About</a>
+        <a href="#sb-work">Work</a>
+        <a href="#sb-skills">Skills</a>
+        <a href="#sb-certificates">Certificates</a>
+        <a href="#sb-education">Education</a>
+        <a href="#sb-contact">Contact</a>
+      </nav>
+      <p class="sb-footer-copy">&copy; <span id="year"></span> All rights reserved.</p>
+      <a class="sb-footer-top" href="#top"><i data-lucide="arrow-up" aria-hidden="true"></i>Back to top</a>
+    </div>
+  </footer>
+
+  <div class="sb-site-stars" aria-hidden="true"></div>
+
+  <div
+    class="sb-toast"
+    data-toast
+    role="status"
+    aria-live="polite"
+    aria-atomic="true"
+    hidden
+  >
+    <p class="sb-toast-text" data-toast-text></p>
+    <button class="sb-toast-close" type="button" data-toast-close aria-label="Dismiss">
+      <i data-lucide="x" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/lucide@0.469.0"></script>
+  <script src="script.js"></script>
+</body>
 </html>

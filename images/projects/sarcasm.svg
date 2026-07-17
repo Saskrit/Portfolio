@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-hidden="true">
+  <rect width="640" height="400" fill="#1F150C"/>
+  <circle cx="250" cy="200" r="110" fill="#412D15"/>
+  <circle cx="250" cy="200" r="78" fill="#E1DCC9" opacity="0.15"/>
+  <path d="M190 190 Q250 120 310 190 Q250 250 190 190 Z" fill="#E1DCC9" opacity="0.85"/>
+  <circle cx="225" cy="185" r="10" fill="#1F150C"/>
+  <circle cx="275" cy="185" r="10" fill="#1F150C"/>
+  <path d="M220 220 Q250 205 280 220" fill="none" stroke="#1F150C" stroke-width="6" stroke-linecap="round"/>
+  <rect x="400" y="110" width="160" height="48" rx="10" fill="#E1DCC9"/>
+  <text x="420" y="140" fill="#1F150C" font-family="Georgia, serif" font-size="18" font-weight="700">SARCASTIC?</text>
+  <rect x="420" y="180" width="120" height="36" rx="8" fill="#000000" opacity="0.4"/>
+  <rect x="420" y="232" width="140" height="36" rx="8" fill="#000000" opacity="0.25"/>
+  <rect x="420" y="284" width="90" height="36" rx="8" fill="#412D15"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-hidden="true">
+  <rect width="640" height="400" fill="#1F150C"/>
+  <ellipse cx="320" cy="320" rx="220" ry="28" fill="#000000" opacity="0.45"/>
+  <path d="M140 250 C180 170 260 150 340 165 C420 180 480 210 520 250 C470 255 420 260 360 255 C280 248 210 250 140 250 Z" fill="#E1DCC9"/>
+  <path d="M160 248 C210 210 280 195 350 205 C410 214 460 235 500 252 L160 248 Z" fill="#412D15"/>
+  <path d="M210 220 C250 205 300 205 340 215" fill="none" stroke="#1F150C" stroke-width="6" stroke-linecap="round"/>
+  <rect x="250" y="232" width="90" height="14" rx="7" fill="#1F150C"/>
+  <circle cx="520" cy="90" r="48" fill="#412D15" opacity="0.55"/>
+  <text x="72" y="88" fill="#E1DCC9" font-family="Georgia, serif" font-size="26" font-weight="700">SNEAKIFY</text>
+</svg>
